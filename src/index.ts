@@ -14,7 +14,7 @@ program
 program.parse(process.argv);
 
 const options = program.opts();
-
+console.log(process.env.PWD)
 let yamlPath = path.resolve('./', 'cloudbuild.yaml');
 
 if (options.config) {
@@ -28,5 +28,7 @@ if (!fs.existsSync(yamlPath)) {
 parse(yamlPath);
 
 if (options.open) {
-  exec('open index.html')
+  exec('open index.html', { cwd: process.cwd() }, (err) => {
+    console.error(err)
+  })
 }
