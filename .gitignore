@@ -1,3 +1,7 @@
+bin/
+cloudbuild.yaml
+index.html
+
 # Logs
 logs
 *.log

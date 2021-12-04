@@ -1,0 +1,37 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    },
+  },
+  "compilerOptions": {
+    "jsx": "preserve",
+    "module": "CommonJS",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "outDir": "bin",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/network-information-types",
+      "src/typings",
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "typings/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "bin"
+  ]
+}

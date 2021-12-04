@@ -1,0 +1,33 @@
+{
+  "name": "cloudbuild-viz",
+  "version": "0.0.3",
+  "description": "",
+  "main": "bin/index.js",
+  "bin": {
+    "cloudbuild-viz": "bin/index.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.3.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^16.11.11",
+    "jest": "^27.4.3",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
